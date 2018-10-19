@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, Component } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RouterModule,Routes } from '@angular/router';
@@ -18,7 +18,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 
 // MDB Angular Free
 import { ButtonsModule, WavesModule, IconsModule } from 'angular-bootstrap-md';
-import { InstituteDashBoardComponent } from './institute-dash-board/institute-dash-board.component'
+import { InstituteDashBoardComponent } from './institute-dash-board/institute-dash-board.component';
+import { GympageComponent } from './gympage/gympage.component'
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { InstituteDashBoardComponent } from './institute-dash-board/institute-da
     HomeComponent,
     LoginComponent,
     ContactusComponent,
-    InstituteDashBoardComponent
+    InstituteDashBoardComponent,
+    GympageComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,10 @@ import { InstituteDashBoardComponent } from './institute-dash-board/institute-da
       {
         path:'institute dash board',
         component:InstituteDashBoardComponent
+      },
+      {
+        path:'category/gym',
+        component:GympageComponent
       }
 
 
