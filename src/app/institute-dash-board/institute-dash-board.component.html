@@ -1,26 +1,13 @@
-<div style="height: 100vh">
 
-<div id="cat">
-<h3>Select Catagories</h3>
+<form #instruments=ngForm (ngSubmit)="onSubmit()">
 
-<!-- Default unchecked -->
-<mdb-checkbox [default]="true">Gym</mdb-checkbox>
-<!-- Default unchecked -->
-<mdb-checkbox [default]="true">Sports clubs</mdb-checkbox>
-<!-- Default unchecked -->
-<mdb-checkbox [default]="true">Dancing acadamies</mdb-checkbox>
-<!-- Default unchecked -->
-<mdb-checkbox [default]="true">Other</mdb-checkbox>
-
-</div>
-
-<div class="pacage">
     <!-- First name -->
-    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Package 1">
+    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Package 1" name="Iname" [(ngModel)]="Iname">
     <br>
-    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Package 1">
+    <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="Itype" [(ngModel)]="Itype">
  
-</div>
 
-</div>
 
+<button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
+
+</form>

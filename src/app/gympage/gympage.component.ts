@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GympageComponent implements OnInit {
 
+  public file_src:string='../assets/images/1.jpg';
+
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

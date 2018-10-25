@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RouterModule,Routes } from '@angular/router';
 
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -33,7 +34,8 @@ import { GympageComponent } from './gympage/gympage.component'
     LoginComponent,
     ContactusComponent,
     InstituteDashBoardComponent,
-    GympageComponent
+    GympageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { GympageComponent } from './gympage/gympage.component'
     ButtonsModule,
     WavesModule,
     IconsModule,
+    HttpClientModule,
     RouterModule
     .forRoot([
       
