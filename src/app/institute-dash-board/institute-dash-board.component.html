@@ -1,13 +1,26 @@
 
-<form #instruments=ngForm (ngSubmit)="onSubmit()">
 
-    <!-- First name -->
-    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Package 1" name="Iname" [(ngModel)]="Iname">
+
+
+
+<!-- Card -->
+
+<mdb-card class="Iform">
     <br>
-    <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="Itype" [(ngModel)]="Itype">
- 
+    <div class="col-md-5">
+    
+    <form #instruments=ngForm (ngSubmit)="onSubmit()">
 
+        <!-- First name -->
+        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Package 1" name="Iname" [(ngModel)]="Iname">
+        <br>
+        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="Itype" [(ngModel)]="Itype">
+        <button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
+    
+    </form>
+   
+</div>
+  
+  </mdb-card>
 
-<button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
-
-</form>
+  
