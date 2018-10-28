@@ -20,7 +20,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 // MDB Angular Free
 import { ButtonsModule, WavesModule, IconsModule } from 'angular-bootstrap-md';
 import { InstituteDashBoardComponent } from './institute-dash-board/institute-dash-board.component';
-import { GympageComponent } from './gympage/gympage.component'
+import { GympageComponent } from './gympage/gympage.component';
+import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.component'
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { GympageComponent } from './gympage/gympage.component'
     ContactusComponent,
     InstituteDashBoardComponent,
     GympageComponent,
+    SwimingpoolpageComponent,
 
   ],
   imports: [
@@ -76,8 +78,11 @@ import { GympageComponent } from './gympage/gympage.component'
       {
         path:'category/gym',
         component:GympageComponent
+      },
+      { 
+      path:'category/Swimingpool',
+      component: SwimingpoolpageComponent
       }
-
 
 
     ])

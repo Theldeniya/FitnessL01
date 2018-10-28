@@ -1,31 +1,6 @@
 
-<!--Main Navigation-->
-<header class="intro-header">
 
-  <!--Navbar-->
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <!-- <mdb-navbar-brand>
-      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a>
-    </mdb-navbar-brand> -->
-    <!-- <links>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Profile</a>
-        </li>
-      </ul>
-      <form class="form-inline waves-light" mdbWavesEffect>
-        <div class="md-form mt-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </div>
-      </form>
-    </links> -->
-  </mdb-navbar>
+  
 
   <!--Intro Section-->
   <section class="view intro-video">
@@ -63,120 +38,78 @@
     </div>
   </section>
 
-</header>
+
 <!--Main Navigation-->
 
 <br>
+<div class="container">
+  <div class="categories">
 
-<!--Rotating card-->
-<div class="col-md-4">
-  <mdb-flipping-card #card>
-    <!--Front Side-->
-    <div class="face front card tp-box_side tp-box_front">
-      <!-- Image-->
-      <div class="card-up">
-        <div class="view overlay hm-white-slight waves-light" mdbWavesEffect>
-          <img src="http://www.australiabusinesscards.com/wp-content/uploads/fitness-posters-for-gym-gym-advertisement-poster-flyer-social-media-graphic-design-template.jpg" class="img-fluid" alt="">
+      <div class="row">
+          <div class="col-md-4">
+            <mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4><a href="category/gym">Gyms</a></h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card>
+          </div>
 
+          <div class="col-md-4">
+            <mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4><a href="category/Swimingpool">Swimming pools</a></h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card>
+          </div>
+
+          <div class="col-md-4">
+            <mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4>Dancing Acedamies</h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card>
+          </div>
+      </div>
+      <div class="row">
+        <br>
+        <br>
         </div>
+      <div class="row">
+          <div class="col-md-4"><mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4>Sports Clubs</h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card></div>
+          <div class="col-md-4"><mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4>Yoga</h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card></div>
+          <div class="col-md-4"><mdb-card>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap"></mdb-card-img>
+              <mdb-card-body>           
+                <mdb-card-title> <h4>Card Title</h4> </mdb-card-title>       
+                <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content. </mdb-card-text>                
+              </mdb-card-body>
+            </mdb-card></div>
       </div>
-      <!--/.Image-->
-
-      <!--Content-->
-      <div class="content">
-        <a class="rotate-btn" data-card="card-2" (click)="card.toggle()">
-          <i class="fa fa-share-alt"></i>
-        </a>
-        <h4>Card title</h4>
-        <hr>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur odio suscipit non commodi vel eius
-          veniam maxime.</p>
-        <a class="link-text">
-          <h5>Read more
-            <i class="fa fa-chevron-right"></i>
-          </h5>
-        </a>
-      </div>
-      <!--/.Content-->
-
     </div>
-    <!--/.Front Side-->
-
-    <!--Back Side-->
-    <div class="face back tp-box_side tp-box_back">
-      <!--Title-->
-      <h4 class="card-title">Social shares
-        <i class="fa fa-close rotate-btn" (click)="card.toggle()"></i>
-      </h4>
-      <hr>
-
-      <!--Social Icons-->
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-fb waves-light" mdbWavesEffect>
-            <i class="fa fa-facebook"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-tw waves-light" mdbWavesEffect>
-            <i class="fa fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-gplus waves-light" mdbWavesEffect>
-            <i class="fa fa-google-plus"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-li waves-light" mdbWavesEffect>
-            <i class="fa fa-linkedin"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-git waves-light" mdbWavesEffect>
-            <i class="fa fa-github"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-pin waves-light" mdbWavesEffect>
-            <i class="fa fa-pinterest"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn floating="true" size="sm" class="btn-ins waves-light" mdbWavesEffect>
-            <i class="fa fa-instagram"> </i>
-          </a>
-        </li>
-      </ul>
-
-      <h5>Join our community</h5>
-      <hr>
-
-      <!--Social Icons-->
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-fb waves-light" mdbWavesEffect>
-            <i class="fa fa-facebook"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class=" btn-tw waves-light" mdbWavesEffect>
-            <i class="fa fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-li waves-light" mdbWavesEffect>
-            <i class="fa fa-linkedin"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a mdbBtn class="btn-ins waves-light" mdbWavesEffect>
-            <i class="fa fa-instagram"> </i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!--/.Back Side-->
-  </mdb-flipping-card>
 </div>
-<!--/.Rotating card-->
+<br>
+
+
+
+
+
+
+
