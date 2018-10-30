@@ -28,10 +28,10 @@ onSubmit(){
   let input=new FormData();
   input.append('Iname',this.Iname);
   input.append('Itype',this.Itype);
-  return this.http.post('http://127.0.0.1:8000/api/insert',input).subscribe(
-    data=>{
-      this.instruments=data;
-      console.log(data);
+  return this.http.post('http://127.0.0.1:8000/api/insert1',input).subscribe(
+    response=>{
+      this.instruments=response;
+      console.log(response);
       this.Iname=null;
       this.Itype=null;
     
