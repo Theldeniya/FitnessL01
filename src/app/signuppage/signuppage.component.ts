@@ -7,6 +7,7 @@ import { HttpClient} from '@angular/common/http';
   templateUrl: './signuppage.component.html',
   styleUrls: ['./signuppage.component.scss']
 })
+
 export class SignuppageComponent implements OnInit {
 
   public from={
@@ -25,8 +26,6 @@ export class SignuppageComponent implements OnInit {
    Password:string;
    P_number:string;
 
- 
-
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
@@ -34,12 +33,13 @@ export class SignuppageComponent implements OnInit {
 
   onSubmit(){
     let input=new FormData();
-    input.append('first_name',this.F_name);
-    input.append('last_name',this.L_name);
-    input.append('email',this.E_mail);
-    input.append('password',this.Password);
-    input.append('phone_number',this.P_number);
+    input.append('First_name',this.F_name);
+    input.append('Last_name',this.L_name);
+    input.append('Email',this.E_mail);
+    input.append('Password',this.Password);
+    input.append('Phone_number',this.P_number);
 
+    console.log(this.L_name);
 
     return this.http.post('http://127.0.0.1:8000/api/insert2',input).subscribe(
       response=>{
