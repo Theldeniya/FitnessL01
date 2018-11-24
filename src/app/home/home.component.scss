@@ -23,7 +23,7 @@
     }
 }
 .rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(41, 16, 150, 0.5), rgba(141, 123, 247, 0.6) 100%);
+  background: linear-gradient(45deg, rgba(156, 158, 248, 0.5), rgba(0, 0, 0, 0.6) 100%);
  
 }
 @media (max-width: 740px) {
@@ -33,4 +33,12 @@
   .full-height header .view {
     height: 700px;
   }
+}
+
+.HomeBody{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(https://avatars.mds.yandex.net/get-pdb/998741/589d85a0-074e-4239-8555-69dad4d9da5c/orig)
+  
 }

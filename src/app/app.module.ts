@@ -21,7 +21,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ButtonsModule, WavesModule, IconsModule } from 'angular-bootstrap-md';
 import { InstituteDashBoardComponent } from './institute-dash-board/institute-dash-board.component';
 import { GympageComponent } from './gympage/gympage.component';
-import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.component'
+import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.component';
+import { EditInfoComponent } from './edit-info/edit-info.component'
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.comp
     InstituteDashBoardComponent,
     GympageComponent,
     SwimingpoolpageComponent,
+    EditInfoComponent,
 
   ],
   imports: [
@@ -74,6 +76,10 @@ import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.comp
       {
         path:'institute dash board',
         component:InstituteDashBoardComponent
+      },
+      {
+        path:'institute dash board/edit info',
+        component:EditInfoComponent
       },
       {
         path:'category/gym',

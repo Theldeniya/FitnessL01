@@ -1,8 +1,21 @@
 
+header, main, footer {
+    padding-left: 240px;
+   }
+   
+   @media only screen and (max-width : 992px) {
+      header, main, footer {
+          padding-left: 0;
+         }
+     }
 
-.Iform{
-    margin: 100px;
-    width: 700px;
+
+#slide-out{
+    background-color: rgb(57, 57, 58);
+    width: 250px;
     
-    
+}
+#image{
+    margin-left: 25%;
+    margin-right: 25%;
 }

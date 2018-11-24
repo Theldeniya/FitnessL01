@@ -1,110 +1,111 @@
 
 
 
+<a mdbBtn color="black" outline="true" class="Edit-info-botton" data-wow-delay="0.3s"
+mdbWavesEffect routerLink="/institute dash board/edit info">Edit Info</a>
+
+<br>
+<br>
 
 
-<!-- Card -->
+<!-- SideNav slide-out button -->
+<!-- <a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse"><i class="fa fa-bars"></i></a> -->
 
-<mdb-card class="Iform">
-    <br>
-    <div class="col-md-12">   
-      <form #instruments=ngForm (ngSubmit)="onSubmit()">
-
-        
-        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="catogary 1" name="catogary" [(ngModel)]="catogary">
-       
-        <br>
-        
-    <div class="form-row mb-4">
-                <div class="col">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="package1" [(ngModel)]="package1">
-                </div>
-                <div class="col-md-4">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price1"  name="price1" [(ngModel)]="price1">
-                </div>
-    </div>
-        <br>
-
-    <div class="form-row mb-4">
-                <div class="col">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 2"  name="package2" [(ngModel)]="package2">
-                </div>
-                <div class="col-md-4">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price2"  name="price2" [(ngModel)]="price2">
-                </div>
-    </div>
-        <br>
-
-    <div class="form-row mb-4">
-                <div class="col">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 3"  name="package3" [(ngModel)]="package3">
-                </div>
-                <div class="col-md-4">
-        <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price3"  name="price3" [(ngModel)]="price3">
-                </div>
-    </div>
-       
-        <button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
-        <br>
-        <br>
-    
-    </form>
-   
+<!-- Sidebar navigation -->
+<div id="slide-out" class="side-nav fixed">
+  <ul class="custom-scrollbar">
+    <!-- Logo -->
+    <li>
+      <div class="logo-wrapper waves-light">
+        <div id="image"><a href="#"><img src="https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/rDtN98Qoishumwih/silhouette-of-a-fitness-man-standing-with-arms-folded-over-dark-background_HYk0SCBj_thumb.jpg" class="img-fluid flex-center"></a></div>
+      </div>
+    </li>
+    <!--/. Logo -->
+    <!--Social-->
+    <li>
+      <ul class="social">
+        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+      </ul>
+    </li>
+    <!--/Social-->
+    <!--Search Form-->
+    <li>
+      <form class="search-form" role="search">
+        <div class="form-group md-form mt-0 pt-1 waves-light">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+    </li>
+    <!--/.Search Form-->
+    <!-- Side navigation links -->
+    <li>
+      <ul class="collapsible collapsible-accordion">
+        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Submit blog<i
+              class="fa fa-angle-down rotate-icon"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#" class="waves-effect">Submit listing</a>
+              </li>
+              <li><a href="#" class="waves-effect">Registration form</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Instruction<i
+              class="fa fa-angle-down rotate-icon"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#" class="waves-effect">For bloggers</a>
+              </li>
+              <li><a href="#" class="waves-effect">For authors</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#" class="waves-effect">Introduction</a>
+              </li>
+              <li><a href="#" class="waves-effect">Monthly meetings</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Contact me<i
+              class="fa fa-angle-down rotate-icon"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#" class="waves-effect">FAQ</a>
+              </li>
+              <li><a href="#" class="waves-effect">Write a message</a>
+              </li>
+              <li><a href="#" class="waves-effect">FAQ</a>
+              </li>
+              <li><a href="#" class="waves-effect">Write a message</a>
+              </li>
+              <li><a href="#" class="waves-effect">FAQ</a>
+              </li>
+              <li><a href="#" class="waves-effect">Write a message</a>
+              </li>
+              <li><a href="#" class="waves-effect">FAQ</a>
+              </li>
+              <li><a href="#" class="waves-effect">Write a message</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <!--/. Side navigation links -->
+  </ul>
+  <div class="sidenav-bg rgba-blue-strong"></div>
 </div>
-  
-  </mdb-card>
-
-
-  
-  <mdb-card class="Iform">
-        <br>
-        <div class="col-md-12">   
-          <form #instruments=ngForm (ngSubmit)="onSubmit()">
-    
-            
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="catogary 2" name="catogary" [(ngModel)]="catogary">
-           
-            <br>
-            
-        <div class="form-row mb-4">
-                    <div class="col">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="package1" [(ngModel)]="package1">
-                    </div>
-                    <div class="col-md-4">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price1"  name="price1" [(ngModel)]="price1">
-                    </div>
-        </div>
-            <br>
-    
-        <div class="form-row mb-4">
-                    <div class="col">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 2"  name="package2" [(ngModel)]="package2">
-                    </div>
-                    <div class="col-md-4">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price2"  name="price2" [(ngModel)]="price2">
-                    </div>
-        </div>
-            <br>
-    
-        <div class="form-row mb-4">
-                    <div class="col">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 3"  name="package3" [(ngModel)]="package3">
-                    </div>
-                    <div class="col-md-4">
-            <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price3"  name="price3" [(ngModel)]="price3">
-                    </div>
-        </div>
-           
-            <button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
-            <br>
-            <br>
-        
-        </form>
-       
-    </div>
-      
-      </mdb-card>
+<!--/. Sidebar navigation -->
 
 
 
-  
+

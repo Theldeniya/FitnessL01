@@ -1,0 +1,232 @@
+<mdb-card class="Idetails">
+  <br>
+  <div class="col-md-12">   
+    <form #instruments=ngForm (ngSubmit)="onSubmit()">
+
+      <h5>Institute Name</h5>
+      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Institute Name" name="catogary" [(ngModel)]="catogary">
+      <br>
+
+<!-- place photo uploader -->
+
+  <form>
+          <div class="file-field md-form">
+            <h5>Place photo</h5>
+            <div mdbBtn color="primary" size="sm" class="waves-light" mdbWavesEffect>
+              <span>Choose place Photo      </span>
+              <input type="file" mdbFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path" type="text" placeholder="Upload your file" [value]="showFiles()">
+            </div>
+          </div>
+          <button class="btn btn-md btn-primary" (click)="startUpload()">Start uploading</button>
+  
+  </form>
+  <br>
+
+<!-- cover photo uploader -->
+
+  <form>
+                  <div class="file-field md-form">
+                    <h5>cover photo</h5>
+                    <div mdbBtn color="primary" size="sm" class="waves-light" mdbWavesEffect>
+                      <span>Choose cover photo      </span>
+                      <input type="file" mdbFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path" type="text" placeholder="Upload your file" [value]="showFiles()">
+                    </div>
+                  </div>
+                  <button class="btn btn-md btn-primary" (click)="startUpload()">Start uploading</button>
+          
+          </form>
+          <br>
+
+<!--Description-->
+        <h5>Description</h5>
+        <div class="md-form">
+          <i class="fa fa-pencil prefix"></i>
+          <textarea type="text" id="form8" class="md-textarea form-control" mdbInputDirective></textarea>
+        </div>
+        
+<!--Address-->  
+  <h5>Address</h5>       
+  <div class="form-row mb-4">
+              <div class="col">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Address Line1"  name="package1" [(ngModel)]="package1">
+              </div>
+              <div class="col">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Address Line2"  name="price1" [(ngModel)]="price1">
+              </div>
+  </div>
+      <br>
+
+<!--city/province/country-->
+<div class="form-row mb-4">
+
+
+  <div class="col">
+  <h5>Country</h5>
+  <select class="browser-default custom-select">
+                  <option selected>Select the country</option>
+                  <option value="1">Moratuwa</option>
+                  <option value="2">nugegoda</option>
+                  <option value="3">kaluthara</option>
+                  <option value="1">Nawala</option>
+                  <option value="2">piliyandala</option>
+                  <option value="3">kKottawa</option>
+          </select>
+  </div>
+
+                  <div class="col">
+                  <h5>province</h5>
+                  <select class="browser-default custom-select">
+                                  <option selected>Select the Province</option>
+                                  <option value="1">Moratuwa</option>
+                                  <option value="2">nugegoda</option>
+                                  <option value="3">kaluthara</option>
+                                  <option value="1">Nawala</option>
+                                  <option value="2">piliyandala</option>
+                                  <option value="3">kKottawa</option>
+                          </select>
+                  </div>
+
+                                  <div class="col">
+                                  <h5>City</h5>    
+                                  <select class="browser-default custom-select">
+                                          <option selected>Select the City</option>
+                                          <option value="1">Moratuwa</option>
+                                          <option value="2">nugegoda</option>
+                                          <option value="3">kaluthara</option>
+                                          <option value="1">Nawala</option>
+                                          <option value="2">piliyandala</option>
+                                          <option value="3">kKottawa</option>
+                                          <option value="1">Moratuwa</option>
+                                          <option value="2">nugegoda</option>
+                                          <option value="3">kaluthara</option>
+                                          <option value="1">Nawala</option>
+                                          <option value="2">piliyandala</option>
+                                          <option value="3">kKottawa</option>
+                                  </select>
+                                  </div>
+                                 
+  </div>
+      <br>
+      <br>
+     
+      <button id="submit1" mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
+      <br>
+      <br>
+  
+  </form>
+ 
+</div>
+
+</mdb-card>
+
+
+<!-- Card add caegory -->
+
+<mdb-card class="Iform">
+<br>
+<div class="col-md-12">   
+<form #instruments=ngForm (ngSubmit)="onSubmit()">
+
+  
+  <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="catogary 1" name="catogary" [(ngModel)]="catogary">
+ 
+  <br>
+  
+<div class="form-row mb-4">
+          <div class="col">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="package1" [(ngModel)]="package1">
+          </div>
+          <div class="col-md-4">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price1"  name="price1" [(ngModel)]="price1">
+          </div>
+</div>
+  <br>
+
+<div class="form-row mb-4">
+          <div class="col">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 2"  name="package2" [(ngModel)]="package2">
+          </div>
+          <div class="col-md-4">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price2"  name="price2" [(ngModel)]="price2">
+          </div>
+</div>
+  <br>
+
+<div class="form-row mb-4">
+          <div class="col">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 3"  name="package3" [(ngModel)]="package3">
+          </div>
+          <div class="col-md-4">
+  <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price3"  name="price3" [(ngModel)]="price3">
+          </div>
+</div>
+ 
+  <button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
+  <br>
+  <br>
+
+</form>
+
+</div>
+
+</mdb-card>
+
+
+
+<mdb-card class="Iform">
+  <br>
+  <div class="col-md-12">   
+    <form #instruments=ngForm (ngSubmit)="onSubmit()">
+
+      
+      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="catogary 2" name="catogary" [(ngModel)]="catogary">
+     
+      <br>
+      
+  <div class="form-row mb-4">
+              <div class="col">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 1"  name="package1" [(ngModel)]="package1">
+              </div>
+              <div class="col-md-4">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price1"  name="price1" [(ngModel)]="price1">
+              </div>
+  </div>
+      <br>
+
+  <div class="form-row mb-4">
+              <div class="col">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 2"  name="package2" [(ngModel)]="package2">
+              </div>
+              <div class="col-md-4">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price2"  name="price2" [(ngModel)]="price2">
+              </div>
+  </div>
+      <br>
+
+  <div class="form-row mb-4">
+              <div class="col">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Package 3"  name="package3" [(ngModel)]="package3">
+              </div>
+              <div class="col-md-4">
+      <input type="text" id="defaultRegisterFormSName" class="form-control" placeholder="Price3"  name="price3" [(ngModel)]="price3">
+              </div>
+  </div>
+     
+      <button mdbBtn type="submit" color="default" class="waves-light" mdbWavesEffect>submit</button>
+      <br>
+      <br>
+  
+  </form>
+ 
+</div>
+
+</mdb-card>
+
+
+
