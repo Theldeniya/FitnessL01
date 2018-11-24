@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-edit-info',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditInfoComponent implements OnInit {
 
-  constructor() { }
+    public form={
+      InstituteName:null,
+    }
+
+    institutes;
+    InstituteName:string;
+
+
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
   }
