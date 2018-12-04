@@ -10,12 +10,15 @@ header, main, footer {
      }
 
 
-#slide-out{
-    background-color: rgb(57, 57, 58);
-    width: 250px;
-    
+
+
+.lineChart{
+    width:1000px;
+    height: 1000px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
-#image{
-    margin-left: 25%;
-    margin-right: 25%;
+h4{
+    margin-left: 30px;
+    color: rgb(76, 115, 141);
 }

@@ -5,63 +5,51 @@ import { HttpClient} from '@angular/common/http';
   templateUrl: './institute-dash-board.component.html',
   styleUrls: ['./institute-dash-board.component.scss']
 })
-export class InstituteDashBoardComponent implements OnInit {
+export class InstituteDashBoardComponent {
   
-  public from={
-    catogary: null,
-    package1:null,
-    package2:null,
-    package3:null,
-    price1:null,
-    price2:null,
-    price3:null,
+  public chartType:string = 'line';
 
-  }
+  public chartDatasets:Array<any> = [
+      {data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset'},
+      {data: [28, 48, 40, 19, 86, 27, 90], label: 'My Second dataset'}
+  ];
 
-  instruments;
-   id:number;
-   catogary:string;
-   package1:string;
-   package2:string;
-   package3:string;
-   price1:string;
-   price2:string;
-   price3:string;
+  public chartLabels:Array<any> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+
+  public chartColors:Array<any> = [
+      {
+          backgroundColor: 'rgba(220,220,220,0.2)',
+          borderColor: 'rgba(220,220,220,1)',
+          borderWidth: 2,
+          pointBackgroundColor: 'rgba(220,220,220,1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(220,220,220,1)'
+      },
+      {
+          backgroundColor: 'rgba(151,187,205,0.2)',
+          borderColor: 'rgba(151,187,205,1)',
+          borderWidth: 2,
+          pointBackgroundColor: 'rgba(151,187,205,1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(151,187,205,1)'
+      }
+  ];
+
+  public chartOptions:any = {
+      responsive: true
+  };
+  public chartClicked(e: any): void { }
+  public chartHovered(e: any): void { }
+}
  
 
-  constructor(private http:HttpClient) { }
+//   constructor() { }
 
-  ngOnInit() {
-  }
+//   ngOnInit() {
+//   }
 
-onSubmit(){
-  let input=new FormData();
-  input.append('Catogary',this.catogary);
-  input.append('Package',this.package1);
-  input.append('Package',this.package2);
-  input.append('Package',this.package3);
-  input.append('Price',this.price1);
-  input.append('Price',this.price2);
-  input.append('Price',this.price3);
- 
 
-  return this.http.post('http://127.0.0.1:8000/api/insert1',input).subscribe(
-    response=>{
-      this.instruments=response;
-      console.log(response);
-      this.catogary=null;
-      this.package1=null;
-      this.package2=null;
-      this.package3=null;
-      this.price1=null;
-      this.price2=null;
-      this.price3=null;
-    
-},
-error=>{
-  console.log(error);
-}
-  );
+// }
 
-}
-}

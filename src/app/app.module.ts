@@ -22,7 +22,9 @@ import { ButtonsModule, WavesModule, IconsModule } from 'angular-bootstrap-md';
 import { InstituteDashBoardComponent } from './institute-dash-board/institute-dash-board.component';
 import { GympageComponent } from './gympage/gympage.component';
 import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.component';
-import { EditInfoComponent } from './edit-info/edit-info.component'
+import { EditInfoComponent } from './edit-info/edit-info.component';
+import { EditPackageDetailsComponent } from './edit-package-details/edit-package-details.component';
+import { SideNavComponent } from './side-nav/side-nav.component'
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { EditInfoComponent } from './edit-info/edit-info.component'
     GympageComponent,
     SwimingpoolpageComponent,
     EditInfoComponent,
+    EditPackageDetailsComponent,
+    SideNavComponent,
 
   ],
   imports: [
@@ -88,8 +92,12 @@ import { EditInfoComponent } from './edit-info/edit-info.component'
       { 
       path:'category/Swimingpool',
       component: SwimingpoolpageComponent
-      }
-
+      },
+      { 
+      path:'institute dash board/Edit-Package-Details',
+      component: EditPackageDetailsComponent
+        },
+     
 
     ])
 
