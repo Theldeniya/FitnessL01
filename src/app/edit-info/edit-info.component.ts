@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-info',
@@ -7,10 +8,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./edit-info.component.scss']
 })
 export class EditInfoComponent implements OnInit {
+model:any={};
 
   public form = {
     categoryName: null,
     placeName: null,
+    placePhoto: null,
+    placeCoverPhoto: null,
     placeDescription: null,
     placeAddressLine1: null,
     placeAddressLine2: null,
@@ -20,13 +24,18 @@ export class EditInfoComponent implements OnInit {
     placePostalCode: null,
     placeLatitude: null,
     placeLongitude: null,
+   
+  };
+  public form2={
+    image:null,
   }
 
   categoryId: number;
   categoryName: string;
   placeName: string;
-  // placePhoto: File;
-  // placeCoverPhoto: File;
+  
+  placeCoverPhoto: File;
+  DefaultCP:string = "assets/images/DefaultCP.png"
   placeDescription: string;
   placeAddressLine1: string;
   placeAddressLine2: string;
@@ -38,10 +47,27 @@ export class EditInfoComponent implements OnInit {
   placeLongitude: string;
   response: any;
 
-  constructor(private http: HttpClient) { }
+  image:string;//name
+  imgUrl : string = "/assets/images/1.jpg";
+  fileToUpload: File;
+  
+
+  constructor(private http: HttpClient,private router: Router) { }
 
   ngOnInit() {
+   
   }
+
+  handleFileInput(file:FileList){
+  this.fileToUpload = file.item(0);
+  var reader=new FileReader();
+  reader.onload=(event:any)=>{
+    this.imgUrl=event.target.result;  
+  }
+  reader.readAsDataURL(this.fileToUpload);
+}
+
+  
 
   setCategory(val: any) {
     this.categoryName = val;
@@ -81,10 +107,6 @@ export class EditInfoComponent implements OnInit {
         console.log(error);
       }
     );
-
-
-
-
   }
 
 

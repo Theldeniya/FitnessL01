@@ -52,20 +52,16 @@
   <br>
 
 <!-- cover photo uploader -->
-<div class="col">
-  <form>
-                  <div class="file-field md-form">
-                    <h5>04.cover photo</h5>
-                    <div mdbBtn color="primary" size="sm" class="waves-light" mdbWavesEffect>
-                      <span>Choose cover photo      </span>
-                      <input type="file" mdbFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
-                    </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path" type="text" placeholder="Upload your file" [value]="showFiles()">
-                    </div>
-                  </div>
-                  <button class="btn btn-md btn-primary" (click)="startUpload()">Start uploading</button>
-          
+<div>
+  <form #imageForm=ngForm (ngSubmit)="onSubmit()">
+          <div class="col-5">
+            <div class="form-group">
+              <img src="{{imgUrl}}" height="300px" width="400px">
+              <br><br>
+              <input type="file" clas="upload" #Image accept="image/*" (change)="handleFileInput($event.target.files)" name="image" [(ngModel)]="image">
+              <br><br>
+              </div>
+            </div>
           </form>
           </div>
         </div>
