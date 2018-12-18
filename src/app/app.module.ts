@@ -24,7 +24,8 @@ import { GympageComponent } from './gympage/gympage.component';
 import { SwimingpoolpageComponent } from './swimingpoolpage/swimingpoolpage.component';
 import { EditInfoComponent } from './edit-info/edit-info.component';
 import { EditPackageDetailsComponent } from './edit-package-details/edit-package-details.component';
-import { SideNavComponent } from './side-nav/side-nav.component'
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { DancingpageComponent } from './dancingpage/dancingpage.component'
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { SideNavComponent } from './side-nav/side-nav.component'
     EditInfoComponent,
     EditPackageDetailsComponent,
     SideNavComponent,
+    DancingpageComponent,
 
   ],
   imports: [
@@ -88,6 +90,10 @@ import { SideNavComponent } from './side-nav/side-nav.component'
       {
         path:'category/gym',
         component:GympageComponent
+      },
+      {
+        path:'category/Dancing-Acadamies',
+        component:DancingpageComponent
       },
       { 
       path:'category/Swimingpool',
